@@ -1,0 +1,36 @@
+// max-width — от указанного значения и ниже, включая значение.
+// min-width — от указанного значения и выше, включая значение.
+//
+// @mixin vp-1023 {
+//   @media (max-width: ($vp-1024 - 1px)) {
+//     @content;
+//   }
+// }
+
+.container {
+  // Брейкопойнты :
+  //   - мобильная версия — 320px - 767px
+  //   - планшетная версия — 768px - 1199px
+  //   - десктопная версия — от 1200 px и выше
+
+  // desktop
+  width: 100%;
+  // ширина содержимого по макету 1280 + отступы (100 + 100)
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 100px;
+
+  // outline: 2px solid rgb(27, 177, 27);
+  // outline-offset: -2px;
+
+
+  // tablet
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  // mobile
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,22 @@
+.footer__wrapper {
+  padding: 0 90px;
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+}
+
+.footer__title {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+}
+
+.footer__copyright {
+  margin-left: auto;
+  padding: 8px 12px;
+
+  display: inline-flex;
+  border-radius: 8px;
+  background: var(--color-corn-silk);
+}

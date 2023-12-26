@@ -1,0 +1,18 @@
+.about {
+  background-color: var(--color-corn-silk);
+}
+
+.about__wrapper {
+  padding: 160px 90px;
+  min-height: 600px;
+  position: relative;
+}
+
+.about__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  position: relative;
+  z-index: 2;
+}
