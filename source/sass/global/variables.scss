@@ -1,0 +1,89 @@
+// Colors
+// ---------------------------------
+
+:root {
+  // Default
+
+  --color-default-black: #000000;
+  --color-default-white: #ffffff;
+  --color-transparent: rgba(255, 255, 255, 0);
+
+  // Project palette
+  // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+  --color-neon-blue: #2c39f2;
+  --color-torch-red: #ed0233;
+  --color-cobalt: #003eb7;
+  --color-saphire: #102654;
+
+  --color-night-rider: #333333;
+  --color-white-smoke: #f6f6f6;
+  --color-pattens-blue: #d8ecfe;
+  --color-willow-brook: #e1edce;
+  --color-chelsea-cucumber: #88aa4d;
+  --color-remy: #f8ddd7;
+  --color-outrageous-orange: #f75531;
+  --color-neon-carrot: #fc9b27;
+
+
+  // Gradient
+
+  --black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+  --conic-desktop: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --red-to-blue-opacity: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
+  --red-to-blue-number: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  --red-corner: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  --blue-to-left: linear-gradient(90deg, #102654 50%, #ffffff 50%);
+  --blue-to-red-button: linear-gradient(90.92deg, rgba(0, 57, 220, 0.69) 0%, rgba(237, 0, 67, 0.69) 100%);
+}
+
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default: 18px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+
+$ff-rouble: "Rouble", "Arial", sans-serif;
+
+$ff-roboto: "Roboto Condensed", "Arial", sans-serif;
+$ff-alumni: "Alumni Sans", "Arial", sans-serif;
+$ff-inter: "Inter", "Arial", sans-serif;
+
+$ff-placeholder: "Placeholder", "Arial", sans-serif;
+
+
+// Animation
+// ---------------------------------
+
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600: 0.6s $tf-default;
+
+
+// Viewports
+// ---------------------------------
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1200: 1200px;
+$vp-1280: 1280px;
+$vp-1366: 1366px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+
+
+// Retina
+// ---------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

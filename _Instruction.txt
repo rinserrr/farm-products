@@ -1,0 +1,139 @@
+inidex.html
+1.  <meta name="keywords" content="VR, моноподы, экшн-камеры, квадрокоптеры">
+	<meta name="description" content="Интернет магазин device">
+
+
+2. <title>Интернет магазин device</title>
+
+
+3. scss color
+	global/variables.scss
+	для нейминга цветов https://www.htmlcsscolor.com/hex/334482
+
+
+4. icons
+	!!!! Extract logo to PNG
+	png
+	https://www.favicon-generator.org/
+
+	convert
+	https://convertio.co/ru/png-svg/
+
+	использовать этот генератор
+	https://xn--80aawagdaxi7an.xn--p1ai/#gen
+	https://xn--80aawagdaxi7an.xn--p1ai/#gen
+
+
+	очистить кэш и куки: Network - "Disable Cache"
+
+
+	<link rel="manifest" href="./img/favicon/site.webmanifest">
+	<link rel="icon" href="./img/favicon/favicon.ico" sizes="any">
+	<link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png">
+
+
+	site.webmanifest
+	{
+	  "name": " ",
+	  "icons": [
+		{
+		  "src": "icon-192.png",
+		  "type": "image/png",
+		  "sizes": "192x192"
+		},
+		{
+		  "src": "icon-512.png",
+		  "type": "image/png",
+		  "sizes": "512x512"
+		}
+	  ]
+	}
+
+
+
+5. fonts
+	/* Normal (Regular) 400 */
+	/* Medium 500 */
+	/* Semi Bold (Demi Bold) 600 */
+	/* Bold 700 */
+	/* Extra Bold (Ultra Bold) 800 */
+
+	global/fonts.scss
+	// #####  Inter
+
+	@font-face {
+	  font-style: normal;
+	  font-weight: 400;
+	  font-family: "Inter";
+
+	  font-display: swap;
+	  src:
+		url("../fonts/inter-regular.woff2") format("woff2"),
+		url("../fonts/inter-regular.woff") format("woff");
+	}
+
+	@font-face {
+	  font-style: normal;
+	  font-weight: 700;
+	  font-family: "Inter";
+
+	  font-display: swap;
+	  src:
+		url("../fonts/inter-bold.woff2") format("woff2"),
+		url("../fonts/inter-bold.woff") format("woff");
+	}
+
+
+	global/variables.scss
+	$ff-inter: "Inter", "Arial", sans-serif;
+
+
+	index.html
+	<link rel="preload" href="./fonts/inter-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="./fonts/inter-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
+
+6. Default Fonts
+	global/reboot.scss
+
+	html {
+	  /* Default Fonts */
+	  font-family: $ff-inter;
+	  font-size: $fz-default;
+	  font-style: normal;
+	  font-weight: 400;
+	  line-height: 150%; /* 27px */
+	  color: $color-night-rider;
+	}
+
+
+	global/variables.scss
+
+	$fz-default: 18px;
+
+
+7. viewports
+	global/variables.scss
+
+	global/container.scss
+		// max-width — от указанного значения и ниже, включая значение.
+		// min-width — от указанного значения и выше, включая значение.
+		//
+		// @mixin vp-1023 {
+		//   @media (max-width: ($vp-1024 - 1px)) {
+		//     @content;
+		//   }}
+
+
+		// Брейкопойнты :
+		//   - мобильная версия — 320px - 767px
+		//   - планшетная версия — 768px - 1199px
+		//   - десктопная версия — от 1200 px и выше
+
+		// desktop
+		width: 100%;
+		// ширина содержимого по макету 1160 + отступы (100 + 100)
+		max-width: 1360px;
+		margin: 0 auto;
+		padding: 0 100px;
