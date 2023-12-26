@@ -1,23 +1,31 @@
 .button {
-  padding: 10px 20px;
+  width: 260px;
+  min-height: 60px;
+  padding: 0 24px;
 
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
   box-sizing: border-box;
 
-  font-family: $ff-roboto;
+  /* Body 18px / Bold */
+  font-family: $ff-inter;
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+  // letter-spacing: 0.05em;
+  // text-transform: uppercase;
 
-  background: transparent;
+  // background: transparent;
+  background: var(--color-neon-carrot);
   color: var(--color-default-white);
-  background-color: var(--color-neon-blue);
+  text-align: center;
+  // background-color: $color-neon-blue;
   border: none;
+  border-radius: 5px;
   box-shadow: none;
   appearance: none;
   cursor: pointer;
@@ -29,44 +37,44 @@
 
   transition: opacity $trans-default;
 
-  &::after {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    border: 4px solid var(--color-default-white);
-    z-index: -1;
-  }
+  // &::after {
+  //   width: 100%;
+  //   height: 100%;
+  //   display: block;
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+  //   border: 4px solid var(--color-default-white);
+  //   z-index: -1;
+  // }
 
   &:active {
     opacity: 0.5;
   }
 
-  &:disabled {
-    opacity: 0.5;
-    pointer-events: none;
-  }
+  // &:disabled {
+  //   opacity: 0.5;
+  //   pointer-events: none;
+  // }
 
-  @include hover-focus {
-    color: var(--color-default-white);
-    background: linear-gradient(97.05deg, var(--color-torch-red) 17.6%, var(--color-cobalt) 95.31%);
-    border: none;
+  // @include hover-focus {
+  //   color: var(--color-default-white);
+  //   background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+  //   border: none;
 
-    &::after {
-      display: none;
-    }
-  }
+  //   &::after {
+  //     display: none;
+  //   }
+  // }
 
-  &--secondary {
-    padding: 20px 20px 20px 20px;
-    color: var(--color-saphire);
-    background-color: var(--color-torch-red);
+  // &--secondary {
+  //   padding: 20px 20px 20px 20px;
+  //   color: $color-saphire;
+  //   background-color: $color-torch-red;
 
-    &::after {
-      border: 10px solid var(--color-saphire);
-    }
-  }
+  //   &::after {
+  //     border: 10px solid $color-saphire;
+  //   }
+  // }
 }

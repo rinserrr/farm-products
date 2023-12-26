@@ -6,10 +6,17 @@
   align-items: center;
 }
 
+.footer__logo img {
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+}
+
 .footer__title {
   margin: 0;
   margin-left: 24px;
   padding: 0;
+  font-size: 28px;
 }
 
 .footer__copyright {

@@ -1,18 +1,39 @@
 .about {
-  background-color: var(--color-corn-silk);
+  background-color: var(--color-pattens-blue);
 }
 
 .about__wrapper {
-  padding: 160px 90px;
+  padding: 183px 90px 185px 90px;
   min-height: 600px;
   position: relative;
+
+  &::before {
+    width: 446px;
+    height: 607px;
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 90px;
+    background-image: url("../../img/about/about-img.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+  }
 }
 
 .about__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  width: 637px;
 
+  position: relative;
+  z-index: 2;
+}
+
+.about__text {
+  margin: 0;
+  width: 538px;
   position: relative;
   z-index: 2;
 }
