@@ -1,11 +1,13 @@
 .about {
   background-color: var(--color-pattens-blue);
+  position: relative;
 }
 
 .about__wrapper {
   padding: 183px 90px 185px 90px;
   min-height: 600px;
   position: relative;
+  overflow: hidden;
 
   &::before {
     width: 446px;
