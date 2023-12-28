@@ -6,10 +6,16 @@
   align-items: center;
 }
 
+.header__logo img {
+  width: 44px;
+  height: 44px;
+}
+
 .header__title {
   margin: 0;
   margin-left: 24px;
   padding: 0;
+  font-size: 28px;
 }
 
 .header__link {
