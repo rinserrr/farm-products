@@ -1,0 +1,157 @@
+/* размеры фильтра */
+.form-filter {
+  min-height: 688px;
+}
+
+/* fieldset */
+.form-filter__group {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  padding: 24px 20px;
+  display: block;
+  border: none;
+  background-color: var(--color-default-white);
+  position: relative;
+}
+
+/* title */
+.form-filter__group-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+
+.form-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-filter__item {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+
+/* checkbox */
+
+/* текст лэйбла */
+.control {
+  position: relative;
+}
+
+/* неактивный чекед */
+.filter-mark::before {
+  width: 24px;
+	height: 24px;
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 290px;
+	background-image: url(../img/control/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* активный чекед */
+.control-input[type="checkbox"]:checked + .filter-mark::before {
+	background-image: url(../img/control/checkbox-on.svg);
+}
+
+/* фокус чекеда */
+.control:focus-within::after {
+  width: 280px;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 2px solid var(--color-base-purple);
+  outline-offset: 2px;
+}
+
+/* hover чекеда */
+.control:hover {
+  opacity: 0.6;
+}
+
+/* active чекеда */
+.control:active {
+  opacity: 0.3;
+}
+
+/* disabled чекеда */
+.control:disabled {
+  opacity: 0.1;
+}
+
+
+
+.form-filter__group--order {
+  margin-bottom: 0;
+}
+
+.form-filter__item-input {
+  padding: 14px 96px 14px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: #F6F6F6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.form-filter__price-title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;   /* 21px */
+}
+
+/* placeholder инпута */
+.form-filter__item-input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+}
+
+/* фокус инпута */
+.form-filter__item-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--color-base-purple);
+  outline: 0;
+  // box-shadow: 0 0 0 0.2rem var(--color-base-purple);
+}
+
+.control3:hover {
+  opacity: 0.6;
+}
+
+.control3:active {
+  opacity: 0.3;
+}
+
+.control3:disabled {
+  opacity: 0.1;
+}
+
+
+
+/* form button */
+.form-filter__button-wrapper {
+  padding: 12px 20px 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-default-white);
+}
+
+.form-filter__button-wrapper button {
+  width: 310px;
+}
