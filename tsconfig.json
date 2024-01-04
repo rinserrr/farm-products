@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es2021",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    // "jsx": "react-jsx",
+    "jsx": "react",
+    "strict": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+    "noEmit": true // Do not compile the JS (or TS) files in this project on build
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "src",
+    "wwwroot",
+    "node_modules"
+  ],
+  "include": [
+    "file.ts"
+  ]
+}
+
+// Обратите внимание на параметры компилятора:
+// - target: указывает версию ECMAScript, на которую нужно компилировать TypeScript код. В данном случае - es2021.
+// - module: указывает, какой модульный формат использовать при компиляции. В данном случае - esnext.
+// - lib: указывает, какие библиотеки должны быть доступны во время компиляции. В данном случае - dom, dom.iterable и esnext.
+// - jsx: указывает, какой синтаксис JSX использовать. В данном случае - react-jsx.
+// - strict: включает строгую типизацию TypeScript.
+// - esModuleInterop: позволяет использовать импорты CommonJS модулей в TypeScript коде.
+// - skipLibCheck: отключает проверку типов для стандартных библиотек TypeScript.
+// - forceConsistentCasingInFileNames: требует, чтобы имена файлов были написаны в одном стиле (например, либо все в нижнем регистре, либо все в верхнем).
+// В качестве include указывается путь к директории с исходным кодом.

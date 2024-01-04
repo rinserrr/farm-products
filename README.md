@@ -1,77 +1,70 @@
-## Краткая инструкция по работе
-- [Установить node.js](https://nodejs.org/download/release/latest-v16.x/). Сборка работает на 16 версии
-- С помощью терминала установить зависимости - `npm i`
-- Запуск локального сервера без минификаций - `npm start`
-- Запуск локального сервера c минификациями, <br>
-данный вариант не используется в разработке, <br>
-он нужен только для тестов производительности <br>
-на локальном хосте  - `npm run dev`
-- Сборка проекта, минификация скриптов <br>
-и оптимизация изображений перед деплоем на прод - `npm run build`
-- Запуск тестирования на соответствия кодгайдам - `npm test`
-- Создание webp изображений в директории source - `npm run webp`
-- Deploy проекта - `npm run deploy`
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Вся разработка ведётся в директории `source`
-### Итоговый код попадает в директорию `build`
-<br/>
-<br/>
-<br/>
-<br/>
+## Available Scripts
 
+In the project directory, you can run:
 
-## Основные команды для работы
+### `npm start`
 
-### инициализация
-> git init\
-> git status
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### переименовали ветку
-> git branch -m master main\
-> git branch -M main
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### коммитим
-> git add .\
-> git commit -m "initial project version"
+### `npm test`
 
-### cвязываем наш локальный репозиторий с репозиторием на на GitHub
-> git remote add origin https://github.com/rinserrr/web-template.git
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### отправка изменений на сервер
-> git push -u origin main
+### `npm run build`
 
-### запрос изменений с сервера
-> git pull origin main\
-> git pull origin module2-task1
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### отправка изменений на сервер
-> git branch module1-task1\
-> git checkout module1-task1\
-> git add .\
-> git commit -m "Запустил проект"\
-> git push --set-upstream origin module1-task1\
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### мердж ветки в мастер
-> git checkout main\
-> git merge module1-task1\
-> git push origin main
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### отменить выполнение команды git add:
-> git restore --staged .
+### `npm run eject`
 
-### посмотреть коммиты:
-> git log\
-> git log --oneline\
-> git log --oneline --graph\
-> git log --oneline --graph --all
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### посмотреть выбранный коммит:
-> git show hash_commit
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### переделать commit message и внести туда новый комментарий:
-> git commit --amend -m 'Новый комментарий'
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### удаление локальной ветки
-> git branch -d mybranch
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
