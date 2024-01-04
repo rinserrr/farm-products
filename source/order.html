@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="натуральные продукты, мясо, голень, кролик, гусь">
+  <meta name="description" content="Натуральные фермерские продукты">
+
+  <title>Фермерские продукты</title>
+
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="icon" href="./img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="./img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png">
+
+  <!--
+  <link rel="preload" href="./fonts/alumnisans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumnisans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumnisans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="./fonts/robotocondensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  -->
+
+  <link rel="preload" href="./fonts/inter-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/inter-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper noselect">
+    <header class="header noselect">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo-link logo" href="index.html">
+            <picture class="header__logo">
+              <img src="img/logo/logo.svg" width="44" height="44" alt="Логотип Фермерских продуктов.">
+            </picture>
+          </a>
+
+          <span class="header__title h2">Фермерские продукты</span>
+
+          <a class="header__link header__link--order h3" href="index.html">Главная</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__wrapper">
+            <h2 class="catalog__title visually-hidden h2">Каталог фермерских продуктов</h2>
+
+            <section class="catalog__form-filter form-filter">
+              <h3 class="visually-hidden">Список товаров с фильтрами</h3>
+
+              <form
+                class="form-filter"
+                action="https://echo.htmlacademy.ru"
+                method="post"
+              >
+
+                <fieldset class="form-filter__group">
+                  <p class="form-filter__group-title">Выберите продукты</p>
+                  <ul class="form-filter__list">
+                    <li class="form-filter__item">
+                      <label class="control" for="chicken-thigh-fillet">
+                        <input class="visually-hidden control-input" type="checkbox" name="chicken-thigh-fillet" id="chicken-thigh-fillet" checked>
+                        <span class="filter-mark"></span>
+                        Филе бедра цыпленка
+                      </label>
+                    </li>
+
+                    <li class="form-filter__item">
+                      <label class="control" for="goose-thigh-fillet">
+                        <input class="visually-hidden control-input" type="checkbox" name="goose-thigh-fillet" id="goose-thigh-fillet" checked>
+                        <span class="filter-mark"></span>
+                        Филе бедра гуся
+                      </label>
+                    </li>
+
+                    <li class="form-filter__item">
+                      <label class="control" for="beef-thigh-pulp">
+                        <input class="visually-hidden control-input" type="checkbox" name="beef-thigh-pulp" id="beef-thigh-pulp" checked>
+                        <span class="filter-mark"></span>
+                        Мякоть бедра говяжья
+                      </label>
+                    </li>
+
+                    <li class="form-filter__item">
+                      <label class="control" for="chicken-breast-bone">
+                        <input class="visually-hidden control-input" type="checkbox" name="chicken-breast-bone" id="chicken-breast-bone">
+                        <span class="filter-mark"></span>
+                        Грудка цыпленка на кости
+                      </label>
+                    </li>
+
+                    <li class="form-filter__item">
+                      <label class="control" for="chicken-drumstick">
+                        <input class="visually-hidden control-input" type="checkbox" name="chicken-drumstick" id="chicken-drumstick">
+                        <span class="filter-mark"></span>
+                        Голень цыпленка
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+
+
+                <fieldset class="form-filter__group form-filter__group--order">
+                  <p class="form-filter__group-title">Сделать заказ</p>
+                  <ul class="form-filter__list">
+                    <li class="form-filter__item">
+                      <label class="control3" for="adres">
+                        <input class="form-filter__item-input control-input" type="text" name="adres" id="adres" placeholder="Введите адрес доставки">
+                      </label>
+                    </li>
+                  </ul>
+
+                  <span class="form-filter__price-title">Цена</span>
+                  <p class="form-filter__price h4">1200 <span>руб.</span></p>
+                </fieldset>
+
+
+                <div class="form-filter__button-wrapper">
+                  <button class="form-filter__apply button">Купить</button>
+                </div>
+              </form>
+            </section>
+
+            <section class="catalog__list">
+              <h3 class="visually-hidden h3">Список карточек товаров</h3>
+
+              <ul class="catalog__card-list card-list">
+                <li class="card-list__item">
+
+                  <a class="card-list__link" href="#">
+                    <picture>
+                      <!-- <source type="image/webp" media="(min-width: 320px)"
+                        srcset="img/catalog/decaf-flat-white.webp 1x, img/catalog/decaf-flat-white@2x.webp 2x"> -->
+
+                      <img class="card-list__image" src="./img/catalog/chicken-thigh-fillet.jpg"
+                        srcset="./img/catalog/chicken-thigh-fillet@2x.jpg 2x" width="248" height="248"
+                        alt="Филе бедра цыпленка.">
+                    </picture>
+                  </a>
+
+                  <div class="card-list__item-wrapper">
+                    <h4 class="card-list__title h4">Филе бедра цыпленка</h4>
+
+                    <div class="card-list__optioins">
+                      <a class="card-list__button card-list__button--description button" href="#">
+                        <span class="card-list__description">Описание</span>
+                      </a>
+
+                      <a class="card-list__button card-list__button--characteristics button" href="#">
+                        <span class="card-list__description">Характеристики</span>
+                      </a>
+
+                      <a class="card-list__button card-list__button--property button" href="#">
+                        <span class="card-list__description">Свойства</span>
+                      </a>
+                    </div>
+
+                    <p class="card-list__text">Филе бедра без кожи и&nbsp;кости. Птица содержится <br>в&nbsp;свободных птичниках, выращивается на&nbsp;натуральных <br>зерновых кормах, что влияет положительно на&nbsp;вкус мяса. <br>Филейная часть бедра обладает насыщенным вкусом <br>и&nbsp;мясным ароматом.</p>
+
+                    <p class="card-list__price">400 руб. / 700 гр.</p>
+
+                  </div>
+                </li>
+
+                <li class="card-list__item">
+
+                  <a class="card-list__link" href="#">
+                    <picture>
+                      <!-- <source type="image/webp" media="(min-width: 320px)"
+                        srcset="img/catalog/decaf-flat-white.webp 1x, img/catalog/decaf-flat-white@2x.webp 2x"> -->
+
+                      <img class="card-list__image" src="./img/catalog/goose-thigh-fillet.jpg"
+                        srcset="./img/catalog/goose-thigh-fillet@2x.jpg 2x" width="248" height="248"
+                        alt="Филе бедра гуся.">
+                    </picture>
+                  </a>
+
+                  <div class="card-list__item-wrapper">
+                    <h4 class="card-list__title h4">Филе бедра гуся</h4>
+
+                    <div class="card-list__optioins">
+                      <a class="card-list__button card-list__button--description button" href="#">
+                        <span class="card-list__description">Описание</span>
+                      </a>
+
+                      <a class="card-list__button card-list__button--characteristics button" href="#">
+                        <span class="card-list__description">Характеристики</span>
+                      </a>
+
+                      <a class="card-list__button card-list__button--property button" href="#">
+                        <span class="card-list__description">Свойства</span>
+                      </a>
+                    </div>
+
+                    <p class="card-list__text">Филе бедра гуся&nbsp;&mdash; это тонко нарезанный продукт, который <br>понравится всем любителям сырокопченых продуктов. <br>Необычный вкус, аппетитный аромат и&nbsp;тонкое послевкусия <br>отличает сырокопченого гуся от&nbsp;других подобных <br>продуктов.</p>
+
+                    <p class="card-list__price">400 руб. / 700 гр.</p>
+
+                  </div>
+                </li>
+
+                <li class="card-list__item">
+
+                  <a class="card-list__link" href="#">
+                    <picture>
+                      <!-- <source type="image/webp" media="(min-width: 320px)"
+                        srcset="img/catalog/decaf-flat-white.webp 1x, img/catalog/decaf-flat-white@2x.webp 2x"> -->
+
+                      <img class="card-list__image" src="./img/catalog/beef-thigh-pulp.jpg"
+                        srcset="./img/catalog/beef-thigh-pulp@2x.jpg 2x" width="248" height="248"
+                        alt="Мякоть бедра говяжья.">
+                    </picture>
+                  </a>
+
+                  <div class="card-list__item-wrapper">
+                    <h4 class="card-list__title h4">Мякоть бедра говяжья</h4>
+
+                    <div class="card-list__optioins">
+                      <a class="card-list__button card-list__button--description button" href="#">
+                        <span class="card-list__description">Описание</span>
+                      </a>
+
+                      <a class="card-list__button card-list__button--characteristics button" href="#">
+                        <span class="card-list__description">Характеристики</span>
+                      </a>
+
+                      <a class="card-list__button card-list__button--property button" href="#">
+                        <span class="card-list__description">Свойства</span>
+                      </a>
+                    </div>
+
+                    <p class="card-list__text">Мякоть бедра&nbsp;&mdash; это жестковатое мясо, но&nbsp;очень диетическое и&nbsp;прекрасно подходит для поклонников здорового питания. Мясо можно запечь или потушить с&nbsp;овощами. Все бычки на&nbsp;ферме Эдуарда Васильева выращиваются на&nbsp;натуральном корме</p>
+
+                    <p class="card-list__price">400 руб. / 700 гр.</p>
+
+                  </div>
+                </li>
+
+
+
+
+
+
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer class="footer noselect">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="footer__logo-link logo" href="index.html">
+            <picture class="footer__logo">
+              <img src="img/logo/logo.svg" width="44" height="44" alt="Логотип Фермерских продуктов.">
+            </picture>
+          </a>
+
+          <span class="footer__title h2">Фермерские продукты</span>
+
+          <p class="footer__copyright">Создано 2021</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper noselect">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper noselect">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

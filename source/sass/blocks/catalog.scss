@@ -1,0 +1,12 @@
+.catalog {
+  background-color: var(--color-white-smoke);
+}
+
+.catalog__wrapper {
+  padding: 40px 90px;
+
+  display: grid;
+
+  grid-template-columns: 353px 1fr;
+  column-gap: 20px;
+}
