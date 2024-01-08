@@ -1,0 +1,28 @@
+.button {
+  width: 260px;
+  min-height: 60px;
+  padding: 0 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+  background: var(--color-neon-carrot);
+  color: var(--color-default-white);
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
