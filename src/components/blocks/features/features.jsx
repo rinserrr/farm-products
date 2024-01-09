@@ -17,7 +17,8 @@ function Features({products}) {
               <div className="products__wrapper">
                 <ul className="products__list">
                   {products.map((product) => (
-                    <li className="products__item products__item--good" key={product.id}>
+                    // <li className="products__item products__item--good" key={product.id}>
+                    <li className={`products__item products__item--${product.type}`} key={product.id}>
                       <FeatureCard {...product} />
                     </li>
                   ))}
