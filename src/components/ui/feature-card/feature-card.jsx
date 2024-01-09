@@ -7,8 +7,10 @@ function dangerousHTML(html) {
 }
 
 
-function FeatureCard({title, subtitle, image, text}) {
+function FeatureCard({title, subtitle, image, text, type}) {
   const [imageData, setImageData] = useState('');
+
+  const suffixClass = type ? `products__subtitle--${type}` : '';
 
   useEffect(() => {
     fetch(image)
@@ -34,7 +36,7 @@ function FeatureCard({title, subtitle, image, text}) {
       )}
 
       <div className="products__title-wrapper">
-        <p className="products__subtitle products__subtitle--good">{subtitle}</p>
+        <p className={`products__subtitle ${suffixClass}`}>{subtitle}</p>
 
         <Title className="products__title noselect" size={TitleSize.H4} tag="h4">{title}</Title>
       </div>

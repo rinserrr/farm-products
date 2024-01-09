@@ -10,8 +10,6 @@ function MainPage({products}) {
         <About />
         <Features products={products} />
 
-        <img width={44} height={44} src="1.png" alt="" />
-
       </main>
     </>
   );

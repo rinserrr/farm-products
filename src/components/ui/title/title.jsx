@@ -18,7 +18,7 @@ function Title({ children, size, tag = 'h2', ...props }) {
 
   // 2
   const Tag = tag;
-  const sizeClass = size ? `title__${size}` : '';
+  const sizeClass = size ? `title--${size}` : '';
   // console.log(children); - Магазин фермерских продуктов с доставкой
   return <Tag className={`${props.className} title ${sizeClass}`}> {children} </Tag>;
 }
