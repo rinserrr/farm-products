@@ -15,4 +15,5 @@ function MainPage({products}) {
   );
 }
 
+
 export default MainPage;

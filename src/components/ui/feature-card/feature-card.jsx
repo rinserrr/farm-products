@@ -46,5 +46,5 @@ function FeatureCard({title, subtitle, image, text, type}) {
   );
 }
 
-export default FeatureCard;
 
+export default FeatureCard;
