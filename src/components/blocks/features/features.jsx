@@ -16,12 +16,13 @@ function Features({products}) {
             <div className="features__product products">
               <div className="products__wrapper">
                 <ul className="products__list">
+
                   {products.map((product) => (
-                    // <li className="products__item products__item--good" key={product.id}>
                     <li className={`products__item products__item--${product.type}`} key={product.id}>
                       <FeatureCard {...product} />
                     </li>
                   ))}
+
                 </ul>
               </div>
             </div>
@@ -40,5 +41,6 @@ function Features({products}) {
     </>
   );
 }
+
 
 export default Features;

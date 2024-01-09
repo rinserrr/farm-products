@@ -26,9 +26,6 @@
 }
 
 
-/* mixins.scss */
-
-
 /* reboot.scss */
 *,
 *::before,
@@ -57,7 +54,6 @@ html {
 body {
   width: 100%;
   height: 100%;
-  /* Body 18px/Regular */
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
